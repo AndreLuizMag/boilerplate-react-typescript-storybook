@@ -73,18 +73,6 @@ the packages in the project.
 npm i
 ```
 
-#### Running the project
-
-```bash
-npm run dev
-```
-
-#### Running Storybook
-
-```bash
-npm run sb
-```
-
 <br/>
 
 ## Usage
