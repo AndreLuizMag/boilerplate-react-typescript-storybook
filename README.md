@@ -73,13 +73,13 @@ the packages in the project.
 npm i
 ```
 
-#### Execução do projeto
+#### Running the project
 
 ```bash
 npm run dev
 ```
 
-#### Execução do Storybook
+#### Running Storybook
 
 ```bash
 npm run sb
