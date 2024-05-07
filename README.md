@@ -41,8 +41,7 @@ This project only has the base tools for development:
 In addition to the technologies mentioned above, this
 template also includes:
 
-- [Atomic Design](https://atomicdesign.bradfrost.com)
-- [CSS Modules](https://github.com/css-modules/css-modules)
+- [BEM](https://en.bem.info/methodology/)
 
 <br/>
 
@@ -87,6 +86,24 @@ npm run dev
 ```
 
 #### Running Storybook
+
+```bash
+npm run sb
+```
+
+#### Running Vitest
+
+```bash
+npm run test
+```
+
+#### Build project
+
+```bash
+npm run build
+```
+
+#### Build Storybook
 
 ```bash
 npm run sb
