@@ -1,4 +1,4 @@
-import Button from '../Button'
+import { Button } from '../Button'
 import './index.scss'
 
 type User = {
@@ -12,7 +12,7 @@ interface HeaderProps {
 	onCreateAccount?: () => void
 }
 
-const Header = ({
+export const Header = ({
 	user,
 	onLogin,
 	onLogout,
@@ -74,5 +74,3 @@ const Header = ({
 		</div>
 	</header>
 )
-
-export default Header

@@ -41,6 +41,8 @@ This project only has the base tools for development:
 In addition to the technologies mentioned above, this
 template also includes:
 
+- [ESLint](https://eslint.org/)
+- [Prettier](https://prettier.io/)
 - [BEM](https://en.bem.info/methodology/)
 
 <br/>
@@ -85,11 +87,20 @@ project into action.
 npm run dev
 ```
 
-#### Running Storybook
+_Starts the development server for the project._
+
+<br/>
+
+#### Running ESLint
 
 ```bash
-npm run sb
+npm run lint
 ```
+
+_Executes ESLint to check for code quality and style
+issues._
+
+<br/>
 
 #### Running Vitest
 
@@ -97,18 +108,29 @@ npm run sb
 npm run test
 ```
 
+_Launches Vitest for automated testing._
+
+<br/>
+
+#### Running Storybook
+
+```bash
+npm run sb
+```
+
+_Starts Storybook for component development and testing._
+
+<br/>
+
 #### Build project
 
 ```bash
 npm run build
 ```
 
-#### Build Storybook
+_Builds the project for production deployment._
 
-```bash
-npm run sb
-```
-
+<br/>
 <br/>
 
 ## License
