@@ -1,4 +1,4 @@
-.Content {
+.content {
 	max-width: 1280px;
 	margin: 0 auto;
 	padding: 2rem;
@@ -9,7 +9,7 @@
 	justify-content: center;
 }
 
-.GridLogo {
+.grid-logo {
 	width: fit-content;
 	width: --moz-fit-content;
 	display: grid;
@@ -17,7 +17,7 @@
 	grid-template-rows: repeat(2, 1fr);
 }
 
-.Logo {
+.logo {
 	height: 6em;
 	padding: 1.5em;
 	will-change: filter;
@@ -29,7 +29,7 @@
 		);
 	}
 
-	&.React {
+	&--react {
 		&:hover {
 			filter: drop-shadow(
 				0 0 2em hsla(193, 95%, 68%, 0.667)
@@ -37,28 +37,28 @@
 		}
 	}
 
-	&.Typescript {
+	&--typescript {
 		&:hover {
 			filter: drop-shadow(
 				0 0 2em hsla(211, 60%, 48%, 0.667)
 			);
 		}
 	}
-	&.Sass {
+	&--sass {
 		&:hover {
 			filter: drop-shadow(
 				0 0 2em hsla(330, 53%, 60%, 0.667)
 			);
 		}
 	}
-	&.Storybook {
+	&--storybook {
 		&:hover {
 			filter: drop-shadow(
 				0 0 2em hsla(340, 100%, 64%, 0.667)
 			);
 		}
 	}
-	&.Vitest {
+	&--vitest {
 		&:hover {
 			filter: drop-shadow(
 				0 0 2em hsla(79, 70%, 36%, 0.667)
@@ -77,15 +77,15 @@
 }
 
 @media (prefers-reduced-motion: no-preference) {
-	a:nth-of-type(2) .Logo {
+	a:nth-of-type(2) .logo {
 		animation: logo-spin infinite 20s linear;
 	}
 }
 
-.Card {
+.card {
 	padding: 2em;
 }
 
-.ReadTheDocs {
+.read-the-docs {
 	color: #888;
 }

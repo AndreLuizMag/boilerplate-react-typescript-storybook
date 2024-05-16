@@ -5,7 +5,7 @@ type User = {
 	name: string
 }
 
-interface HeaderProps {
+type Props = {
 	user?: User
 	onLogin?: () => void
 	onLogout?: () => void
@@ -17,7 +17,7 @@ export const Header = ({
 	onLogin,
 	onLogout,
 	onCreateAccount,
-}: HeaderProps) => (
+}: Props) => (
 	<header data-testid='header'>
 		<div className='storybook-header'>
 			<div>

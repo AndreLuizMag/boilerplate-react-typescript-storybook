@@ -1,26 +1,27 @@
 import { useState } from 'react'
+import './styles/app.scss'
+
 import viteLogo from './assets/brand/vite.svg'
 import reactLogo from './assets/brand/react.svg'
 import typescriptLogo from './assets/brand/typescript.svg'
 import storybookLogo from './assets/brand/storybook.svg'
 import sassLogo from './assets/brand/sass.svg'
 import vitestLogo from './assets/brand/vitest.svg'
-import styles from './App.module.scss'
 
-const App: React.FC = () => {
-	const [count, setCount] = useState<number>(0)
+export const App = () => {
+	const [count, setCount] = useState(0)
 
 	return (
 		<>
-			<section className={styles.Content}>
-				<div className={styles.GridLogo}>
+			<section className='content'>
+				<div className='grid-logo'>
 					<a
 						href='https://vitejs.dev'
 						target='_blank'
 						rel='noopener noreferrer'>
 						<img
 							src={viteLogo}
-							className={`${styles.Logo} ${styles.Vite}`}
+							className='logo vite'
 							alt='Vite logo'
 						/>
 					</a>
@@ -30,7 +31,7 @@ const App: React.FC = () => {
 						rel='noopener noreferrer'>
 						<img
 							src={reactLogo}
-							className={`${styles.Logo} ${styles.React}`}
+							className='logo react'
 							alt='React logo'
 						/>
 					</a>
@@ -40,7 +41,7 @@ const App: React.FC = () => {
 						rel='noopener noreferrer'>
 						<img
 							src={typescriptLogo}
-							className={`${styles.Logo} ${styles.Typescript}`}
+							className='logo typescript'
 							alt='Typescript logo'
 						/>
 					</a>
@@ -50,7 +51,7 @@ const App: React.FC = () => {
 						rel='noopener noreferrer'>
 						<img
 							src={sassLogo}
-							className={`${styles.Logo} ${styles.Sass}`}
+							className='logo sass'
 							alt='Sass logo'
 						/>
 					</a>
@@ -60,7 +61,7 @@ const App: React.FC = () => {
 						rel='noopener noreferrer'>
 						<img
 							src={storybookLogo}
-							className={`${styles.Logo} ${styles.Storybook}`}
+							className='logo storybook'
 							alt='Storybook logo'
 						/>
 					</a>
@@ -70,7 +71,7 @@ const App: React.FC = () => {
 						rel='noopener noreferrer'>
 						<img
 							src={vitestLogo}
-							className={`${styles.Logo} ${styles.Vitest}`}
+							className='logo vitest'
 							alt='Vitest logo'
 						/>
 					</a>
@@ -80,9 +81,8 @@ const App: React.FC = () => {
 					<br />
 					Sass + Storybook + Vitest
 				</h1>
-				<div className={styles.Card}>
-					<button
-						onClick={() => setCount((count) => count + 1)}>
+				<div className='card'>
+					<button onClick={() => setCount(count + 1)}>
 						count is {count}
 					</button>
 					<p>
@@ -90,12 +90,10 @@ const App: React.FC = () => {
 						HMR
 					</p>
 				</div>
-				<p className={styles.ReadTheDocs}>
+				<p className='read-the-docs'>
 					Click on the logos to learn more
 				</p>
 			</section>
 		</>
 	)
 }
-
-export default App

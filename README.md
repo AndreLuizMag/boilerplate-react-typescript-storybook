@@ -45,6 +45,13 @@ template also includes:
 - [Prettier](https://prettier.io/)
 - [BEM](https://en.bem.info/methodology/)
 
+### Do you want to do it differently?
+
+If you want to create a project to be published as a npm
+package, you can access my other boilerplate with all the
+necessary configurations:
+[boilerplate-react-storybook-npm-package](https://github.com/AndreLuizMag/boilerplate-react-storybook-npm-package)
+
 <br/>
 
 ## Getting Started
